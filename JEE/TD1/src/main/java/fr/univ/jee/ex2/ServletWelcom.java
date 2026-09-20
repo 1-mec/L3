@@ -37,7 +37,7 @@ public class ServletWelcom extends HttpServlet {
 		if (session == null) {
 			response.getWriter().append("You don't have any sessions lil bro");
 		} else {
-			response.getWriter().append( "Welcome "+ session.getAttribute("log") + " !" );
+			response.getWriter().append( "Welcome "+ session.getAttribute("login") + " !" );
 		}
 		response.getWriter().append("</center></h1></body></html>");
 	}

@@ -45,10 +45,9 @@ public class ServletConnect extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-
-		HttpSession sess = request.getSession();
-		sess.setAttribute("log", request.getParameter("login"));
-
+		
+		HttpSession session = request.getSession();
+		session.setAttribute("login",request.getParameter("login"));
 		response.sendRedirect("/TD1/ServletWelcom");
 	}
 

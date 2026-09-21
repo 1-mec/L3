@@ -2,6 +2,7 @@
 #### ex 1
 
 <img width="724" height="195" alt="tableau ip addresses" src="https://github.com/user-attachments/assets/f176e193-94de-4d08-8924-433fd66f4f7c" />
+
 ```
 ! Router0 
 en

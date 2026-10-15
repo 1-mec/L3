@@ -9,7 +9,6 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-import fr.univ.tours.jee.td3.Database;
 
 /**
  * Servlet implementation class ListEmployee
@@ -42,7 +41,9 @@ public class ListEmployee extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		HttpSession session = request.getSession();
+		session.invalidate();
+		response.sendRedirect("index.jsp");
 	}
 
 }

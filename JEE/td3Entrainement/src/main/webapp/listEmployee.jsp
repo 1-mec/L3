@@ -55,5 +55,8 @@
 			</tfoot>
 		</table>
 	</center>
+	<form action="ListEmployee" method=post>
+		<input value=deconnexion type = submit>
+	</form>
 </body>
 </html>

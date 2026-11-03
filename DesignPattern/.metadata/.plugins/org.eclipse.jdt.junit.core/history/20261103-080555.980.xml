@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="tp1" project="tp1" tests="23" started="23" failures="0" errors="0" ignored="0">
+  <testsuite name="utours.l3.dp.tp1.strategy.AffichageDesLivresTest" time="0.036" displayname="Exercice 1 — affichage d'une liste de livres" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AffichageDesLivresTest]">
+    <testsuite name="utours.l3.dp.tp1.strategy.AffichageDesLivresTest$Objectifs" time="0.021" displayname="Objectifs — ignorés tant que le refactoring n'est pas fait" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AffichageDesLivresTest]/[nested-class:Objectifs]">
+      <testcase name="compatibiliteAscendante" classname="utours.l3.dp.tp1.strategy.AffichageDesLivresTest.Objectifs" time="0.016" displayname="afficher() sans argument existe toujours : l'API publique est préservée" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AffichageDesLivresTest]/[nested-class:Objectifs]/[method:compatibiliteAscendante()]">
+        <skipped>org.opentest4j.TestAbortedException: Assumption failed: refactoring non commencé : test ignoré
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at utours.l3.dp.tp1.strategy.AffichageDesLivresTest$Objectifs.compatibiliteAscendante(AffichageDesLivresTest.java:110)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+</skipped>
+      </testcase>
+      <testcase name="afficheurFourniParLAppelant" classname="utours.l3.dp.tp1.strategy.AffichageDesLivresTest.Objectifs" time="0.002" displayname="la liste sait afficher avec l'afficheur qu'on lui donne" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AffichageDesLivresTest]/[nested-class:Objectifs]/[method:afficheurFourniParLAppelant()]">
+        <skipped>org.opentest4j.TestAbortedException: Assumption failed: AfficheurDetaille n'existe pas encore : test ignoré
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at utours.l3.dp.tp1.strategy.AffichageDesLivresTest$Objectifs.afficheurFourniParLAppelant(AffichageDesLivresTest.java:89)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+</skipped>
+      </testcase>
+      <testcase name="livreSansAffichage" classname="utours.l3.dp.tp1.strategy.AffichageDesLivresTest.Objectifs" time="0.001" displayname="le Livre n'expose plus de méthode d'affichage" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AffichageDesLivresTest]/[nested-class:Objectifs]/[method:livreSansAffichage()]">
+        <skipped>org.opentest4j.TestAbortedException: Assumption failed: refactoring non commencé : test ignoré
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at utours.l3.dp.tp1.strategy.AffichageDesLivresTest$Objectifs.livreSansAffichage(AffichageDesLivresTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+</skipped>
+      </testcase>
+      <testcase name="interfaceAfficheur" classname="utours.l3.dp.tp1.strategy.AffichageDesLivresTest.Objectifs" time="0.001" displayname="il existe une interface AfficheurLivre" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AffichageDesLivresTest]/[nested-class:Objectifs]/[method:interfaceAfficheur()]">
+        <skipped>org.opentest4j.TestAbortedException: Assumption failed: AfficheurLivre n'existe pas encore : test ignoré
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at utours.l3.dp.tp1.strategy.AffichageDesLivresTest$Objectifs.interfaceAfficheur(AffichageDesLivresTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+</skipped>
+      </testcase>
+    </testsuite>
+    <testsuite name="utours.l3.dp.tp1.strategy.AffichageDesLivresTest$Invariants" time="0.013" displayname="Invariants — doivent passer AVANT et APRÈS le refactoring" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AffichageDesLivresTest]/[nested-class:Invariants]">
+      <testcase name="resumeNonAffiche" classname="utours.l3.dp.tp1.strategy.AffichageDesLivresTest.Invariants" time="0.009" displayname="l'affichage résumé ne contient pas le résumé de l'ouvrage" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AffichageDesLivresTest]/[nested-class:Invariants]/[method:resumeNonAffiche()]"/>
+      <testcase name="quatreOuvrages" classname="utours.l3.dp.tp1.strategy.AffichageDesLivresTest.Invariants" time="0.001" displayname="la recherche produit quatre ouvrages" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AffichageDesLivresTest]/[nested-class:Invariants]/[method:quatreOuvrages()]"/>
+      <testcase name="affichageResume" classname="utours.l3.dp.tp1.strategy.AffichageDesLivresTest.Invariants" time="0.002" displayname="afficher() écrit une ligne par ouvrage, avec son titre" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AffichageDesLivresTest]/[nested-class:Invariants]/[method:affichageResume()]"/>
+    </testsuite>
+  </testsuite>
+  <testsuite name="utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest" time="0.005" displayname="Exercice 3 — acquisition de grilles de sudoku" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest]">
+    <testsuite name="utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest$Objectifs" time="0.002" displayname="Objectifs — ignorés tant que le refactoring n'est pas fait" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest]/[nested-class:Objectifs]">
+      <testcase name="sourcesConcretes" classname="utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest.Objectifs" time="0.001" displayname="au moins deux sources concrètes existent, et sont interchangeables" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest]/[nested-class:Objectifs]/[method:sourcesConcretes()]">
+        <skipped>org.opentest4j.TestAbortedException: Assumption failed: SourceAleatoire et SourceTexte n'existent pas encore : test ignoré
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest$Objectifs.sourcesConcretes(AcquisitionDeGrilleTest.java:81)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+</skipped>
+      </testcase>
+      <testcase name="interfaceSource" classname="utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest.Objectifs" time="0.001" displayname="il existe une interface SourceDeGrille" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest]/[nested-class:Objectifs]/[method:interfaceSource()]">
+        <skipped>org.opentest4j.TestAbortedException: Assumption failed: SourceDeGrille n'existe pas encore : test ignoré
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest$Objectifs.interfaceSource(AcquisitionDeGrilleTest.java:69)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+</skipped>
+      </testcase>
+    </testsuite>
+    <testsuite name="utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest$Invariants" time="0.002" displayname="Invariants — doivent passer AVANT et APRÈS le refactoring" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest]/[nested-class:Invariants]">
+      <testcase name="aleatoire" classname="utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest.Invariants" time="0.001" displayname="le chargement aléatoire remplit toute la grille" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest]/[nested-class:Invariants]/[method:aleatoire()]"/>
+      <testcase name="depuisTexte" classname="utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest.Invariants" time="0.0" displayname="le chargement depuis un texte respecte les valeurs" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest]/[nested-class:Invariants]/[method:depuisTexte()]"/>
+      <testcase name="tiragesDifferents" classname="utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest.Invariants" time="0.0" displayname="deux tirages successifs diffèrent" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.strategy.AcquisitionDeGrilleTest]/[nested-class:Invariants]/[method:tiragesDifferents()]"/>
+    </testsuite>
+  </testsuite>
+  <testsuite name="utours.l3.dp.tp1.sudoku.Grille9x9Test" time="0.005" displayname="Grille 9x9 — invariants du domaine" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.sudoku.Grille9x9Test]">
+    <testcase name="coordonneesRefusees" classname="utours.l3.dp.tp1.sudoku.Grille9x9Test" time="0.002" displayname="les coordonnées hors grille sont refusées" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.sudoku.Grille9x9Test]/[method:coordonneesRefusees()]"/>
+    <testcase name="grilleRemplie" classname="utours.l3.dp.tp1.sudoku.Grille9x9Test" time="0.0" displayname="une grille entièrement remplie est complète" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.sudoku.Grille9x9Test]/[method:grilleRemplie()]"/>
+    <testcase name="relectureIdentique" classname="utours.l3.dp.tp1.sudoku.Grille9x9Test" time="0.001" displayname="une case renseignée se relit à l'identique" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.sudoku.Grille9x9Test]/[method:relectureIdentique()]"/>
+    <testcase name="grilleNeuveVide" classname="utours.l3.dp.tp1.sudoku.Grille9x9Test" time="0.0" displayname="une grille neuve est entièrement vide" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.sudoku.Grille9x9Test]/[method:grilleNeuveVide()]"/>
+    <testcase name="representationTextuelle" classname="utours.l3.dp.tp1.sudoku.Grille9x9Test" time="0.001" displayname="toString produit 9 lignes de 9 chiffres" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.sudoku.Grille9x9Test]/[method:representationTextuelle()]"/>
+  </testsuite>
+  <testsuite name="utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest" time="0.036" displayname="Exercice 2 — enregistrement d'une grille" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest]">
+    <testsuite name="utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest$Objectifs" time="0.027" displayname="Objectifs — ignorés tant que l'adaptateur n'est pas écrit" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest]/[nested-class:Objectifs]">
+      <testcase name="cheminRespecte" classname="utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest.Objectifs" time="0.022" displayname="l'adaptateur écrit du XML À L'EMPLACEMENT DEMANDÉ" parameters="java.nio.file.Path" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest]/[nested-class:Objectifs]/[method:cheminRespecte(java.nio.file.Path)]">
+        <skipped>org.opentest4j.TestAbortedException: Assumption failed: AdaptateurXml n'existe pas encore : test ignoré
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest$Objectifs.cheminRespecte(EnregistrementDeGrilleTest.java:96)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+</skipped>
+      </testcase>
+      <testcase name="reutilisable" classname="utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest.Objectifs" time="0.001" displayname="l'adaptateur est réutilisable pour deux grilles successives" parameters="java.nio.file.Path" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest]/[nested-class:Objectifs]/[method:reutilisable(java.nio.file.Path)]">
+        <skipped>org.opentest4j.TestAbortedException: Assumption failed: AdaptateurXml n'existe pas encore : test ignoré
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest$Objectifs.reutilisable(EnregistrementDeGrilleTest.java:135)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+</skipped>
+      </testcase>
+      <testcase name="valeursTransmises" classname="utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest.Objectifs" time="0.002" displayname="l'adaptateur transmet fidèlement les valeurs de la grille" parameters="java.nio.file.Path" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest]/[nested-class:Objectifs]/[method:valeursTransmises(java.nio.file.Path)]">
+        <skipped>org.opentest4j.TestAbortedException: Assumption failed: AdaptateurXml n'existe pas encore : test ignoré
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest$Objectifs.valeursTransmises(EnregistrementDeGrilleTest.java:114)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+</skipped>
+      </testcase>
+      <testcase name="conformite" classname="utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest.Objectifs" time="0.001" displayname="l'adaptateur se conforme à l'interface attendue par l'application" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest]/[nested-class:Objectifs]/[method:conformite()]">
+        <skipped>org.opentest4j.TestAbortedException: Assumption failed: AdaptateurXml n'existe pas encore : test ignoré
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest$Objectifs.conformite(EnregistrementDeGrilleTest.java:87)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+</skipped>
+      </testcase>
+    </testsuite>
+    <testsuite name="utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest$Invariants" time="0.007" displayname="Invariants — doivent passer AVANT et APRÈS le refactoring" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest]/[nested-class:Invariants]">
+      <testcase name="formatTexte" classname="utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest.Invariants" time="0.003" displayname="l'enregistreur texte produit 9 lignes de 9 chiffres, au chemin demandé" parameters="java.nio.file.Path" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest]/[nested-class:Invariants]/[method:formatTexte(java.nio.file.Path)]"/>
+      <testcase name="formatXml" classname="utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest.Invariants" time="0.004" displayname="la bibliothèque XML produit 81 cellules" parameters="java.nio.file.Path" uniqueid="[engine:junit-jupiter]/[class:utours.l3.dp.tp1.adapter.EnregistrementDeGrilleTest]/[nested-class:Invariants]/[method:formatXml(java.nio.file.Path)]"/>
+    </testsuite>
+  </testsuite>
+</testrun>

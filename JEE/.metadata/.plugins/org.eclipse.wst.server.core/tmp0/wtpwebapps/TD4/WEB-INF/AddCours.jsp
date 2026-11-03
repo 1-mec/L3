@@ -7,10 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
+<body>
 
+    <h1>Plouf</h1>
+
+    <nav>
+        <a href="AddCours.jsp">Ajouter un cours</a>
+        <a href="ListeCours.jsp">Liste</a>
+    </nav>
     <h3>Liste des cours</h3>
-	<%int id = Integer.parseInt(request.getParameter("id")); %>
-	<form method="post" action=SupprimerServlet?id=<%=id %>>
+    
+
+	<form method="post" action=AddCoursServlet>
 	<table border=1>
 		<tr><td>Intitulé</td><td><input type=text name=intitule></td></tr>
 		<tr><td>Coef</td><td><input type=text name=coef></td></tr>

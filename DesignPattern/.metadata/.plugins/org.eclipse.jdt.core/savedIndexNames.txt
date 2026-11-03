@@ -1,0 +1,14 @@
+INDEX VERSION 1.134+/home/22401035t/L3/DesignPattern/.metadata/.plugins/org.eclipse.jdt.core
+3037437280.index
+1106511225.index
+1924395143.index
+4094482740.index
+4083227949.index
+3101410565.index
+1829079182.index
+2610306294.index
+4147043796.index
+198249692.index
+1184409095.index
+2221288891.index
+436385816.index

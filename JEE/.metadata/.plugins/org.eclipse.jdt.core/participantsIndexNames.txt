@@ -1,0 +1,13 @@
+INDEX VERSION 1.134
+/home/22401035t/L3/JEE/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/820398153.index
+/TD4/src/main/java
+/home/22401035t/L3/JEE/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2011529625.index
+/Tp_note/src/main/java
+/home/22401035t/L3/JEE/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3368453526.index
+/td3Entrainement/src/main/java
+/home/22401035t/L3/JEE/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/586943775.index
+/TD4/src/main/java
+/home/22401035t/L3/JEE/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3961087822.index
+/Tp_note/src/main/java
+/home/22401035t/L3/JEE/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3104666855.index
+/Tp_note/src/main/java

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>fr.univtours.l3.dp</groupId>
+  <artifactId>tp-design-patterns</artifactId>
+  <version>2026.1</version>
+  <packaging>pom</packaging>
+
+  <name>Design Patterns — TP de L3 Informatique</name>
+  <description>
+    Code des travaux pratiques. Chaque TP a deux modules : « tpN » contient
+    le code de départ remis aux étudiants, avec les tests ; « tpN-corrige »
+    contient la version refactorisée. Les deux modules utilisent les MÊMES
+    paquetages et sont validés par les MÊMES tests : un refactoring ne
+    renomme pas les classes et ne change pas le comportement observable.
+  </description>
+
+  <modules>
+    <module>tp1</module>
+    <module>tp2</module>
+    <module>tp2-plugin-basique</module>
+    <module>tp2-plugin-avance</module>
+    <module>tp3</module>
+    <module>tp4</module>
+    <module>tp5</module>
+  </modules>
+
+  <properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit.version>5.10.2</junit.version>
+    <surefire.version>3.2.5</surefire.version>
+    <!-- Versions des greffons Maven fixees ici : sans cela, Maven utilise
+         celles de sa propre installation. Avec Maven 3.x, le compilateur par
+         defaut (3.1) ignore maven.compiler.release et compile en Java 5,
+         ce qui echoue avec « Source option 5 is no longer supported ». -->
+    <compiler.version>3.13.0</compiler.version>
+    <resources.version>3.3.1</resources.version>
+    <jar.version>3.4.1</jar.version>
+    <install.version>3.1.2</install.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${compiler.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>${resources.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>${jar.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>${install.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${surefire.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>

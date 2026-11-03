@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>fr.univtours.l3.dp</groupId>
+    <artifactId>tp-design-patterns</artifactId>
+    <version>2026.1</version>
+  </parent>
+  <artifactId>tp2-plugin-avance</artifactId>
+  <description>TP2 — greffon fournissant un solveur supplementaire</description>
+  <dependencies>
+    <!-- Le greffon compile contre les interfaces de l'application, mais ne les
+         embarque pas : a l'execution, c'est le chargeur parent qui les fournit.
+         C'est le sens de la portee « provided ». -->
+    <dependency>
+      <groupId>fr.univtours.l3.dp</groupId>
+      <artifactId>tp2</artifactId>
+      <version>2026.1</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>

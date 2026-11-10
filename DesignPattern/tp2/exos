@@ -1,0 +1,89 @@
+@startuml
+class ChargeurDeGreffon{
+- ChargeurDeGreffon()
++ {static} charger(repertoir :Path) : Liste de FournisseurDeSolveur
+}
+
+class Application{
+- source : SourceDeGrille
+- solveur : Solveur
++ Application(profil : String , texteGrille: String )
++ executer() : Grille9x9
+}
+
+interface SourceDeGrille{
++ charger():Grille9x9
+}
+
+class SourceExemple {
++ {static} GRILLE:String 
++ charger() : Grille9x9
+}
+
+class SourceTexte{
+- texte : String 
++ SourceTexte(texte : String )
++ charger() : Grille9x9
+}
+
+interface FournisseurDeSolveur{
++ identifiant() : String
++ libelle() : String
++ creer() : Solveur
+}
+
+interface Solveur{
++ nom() : String
++ resoudre(grille : Grille9x9) : boolean
+}
+
+class SolveurBackTracking{
++ nom() : String
++ resoudre(grille : Grille9x9) : boolean
+- explorer(grille : Grille9x9): boolean
+
+}
+
+class SolveurGlouton{
++ nom() : String
++ resoudre(grille : Grille9x9) : boolean
+}
+
+class Grille9x9{
++ {static} VIDE : int
+- {static} TAILLE : int
+- valeurs : int[][]
++ set(colonne : int, ligne : int , valeur : int)
++ get(colonne : int, ligne : int) : int
++ taille() : int
+- verifierCoordonnees(colonne : int, ligne : int)
++ toString() : String
+}
+
+class Regles{
+- Regles()
++ {static} placementLegal(grile : Grille9x9,colonne : int, ligne : int, valeur : int) : boolean
++ {static} grilleCoherante(grille : Grille9x9) : boolean
++ {static} grilleResolue(grille : Grille9x9) : boolean
+}
+
+SourceTexte --|> SourceDeGrille
+SourceExemple --|> SourceDeGrille
+SolveurGlouton --|> Solveur
+SolveurBackTracking --|> Solveur
+SourceTexte <-- Grille9x9
+FournisseurDeSolveur --> ChargeurDeGreffon
+Grille9x9 --> SolveurBackTracking
+Regles --> SolveurBackTracking
+
+Grille9x9 --> SolveurGlouton
+Regles --> SolveurGlouton
+
+Application <-- SolveurGlouton
+Application <-- SolveurBackTracking
+Application <-- SourceExemple
+Application <-- SourceTexte
+Application <-- Grille9x9
+
+
+@enduml
